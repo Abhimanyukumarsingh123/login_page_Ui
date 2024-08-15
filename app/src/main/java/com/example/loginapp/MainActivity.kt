@@ -49,7 +49,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-
+@Preview(showBackground = true)
 @Composable
 fun LoginUi(modifier: Modifier = Modifier) {
     val context : Context= LocalContext.current
@@ -63,7 +63,7 @@ fun LoginUi(modifier: Modifier = Modifier) {
     }
 
     Column {
-        Spacer(modifier = Modifier.height(40.dp))
+        Spacer(modifier = Modifier.height(40.dp).fillMaxSize())
 
         Text(
             text = "Welcome to My Frist ", fontSize = 26.sp,
@@ -120,5 +120,6 @@ fun LoginUi(modifier: Modifier = Modifier) {
         ) {
             Text(text = "Login")
         }
+        Text(text = "hello this is my frist commite",modifier=Modifier.padding(start = 70.dp))
     }
 }
